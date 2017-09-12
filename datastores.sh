@@ -27,8 +27,10 @@ brew install elasticsearch
 
 # Install mysql workbench
 # Install Cask
-brew install caskroom/cask/brew-cask
+# Install pgAdmin
+# Deprecated - brew install caskroom/cask/brew-cask
 brew cask install --appdir="/Applications" mysqlworkbench
+brew cask install --appdir="/Applications" pgadmin4
 
 # Remove outdated versions from the cellar.
 brew cleanup

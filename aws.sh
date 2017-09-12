@@ -60,13 +60,13 @@ pip install awscli
 #pip install s3cmd  # Python 2 only
 
 # Uncomment if you want to hook up the aws cli autocomplete for Python 3
-#EXTRA_PATH=~/.extra
-#echo $EXTRA_PATH
-#echo "" >> $EXTRA_PATH
-#echo "" >> $EXTRA_PATH
-#echo "# Configure aws cli autocomplete, added by aws.sh" >> $EXTRA_PATH
-#echo "complete -C '~/.virtualenvs/py3-data/bin/aws_completer' aws" >> $EXTRA_PATH
-#source $EXTRA_PATH
+EXTRA_PATH=~/.extra
+echo $EXTRA_PATH
+echo "" >> $EXTRA_PATH
+echo "" >> $EXTRA_PATH
+echo "# Configure aws cli autocomplete, added by aws.sh" >> $EXTRA_PATH
+echo "complete -C '~/.virtualenvs/py3-data/bin/aws_completer' aws" >> $EXTRA_PATH
+source $EXTRA_PATH
 
 ###############################################################################
 # System-Wide Packages                                                        #
@@ -82,7 +82,17 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install apache-spark
+# brew install apache-spark
+
+# Install SAWS command line
+# https://github.com/donnemartin/saws
+# Best to install virtualenv per IAM
+# In each virtualenv install SAWS
+# pip install saws
+
+# Install Serverless Framework
+npm install -g serverless
+
 
 ###############################################################################
 # Install IPython Notebook Spark Integration
@@ -92,19 +102,19 @@ echo "------------------------------"
 echo "Installing IPython Notebook Spark integration"
 
 # Add the pyspark IPython profile
-cp -r init/profile_pyspark/ ~/.ipython/profile_pyspark
+#cp -r init/profile_pyspark/ ~/.ipython/profile_pyspark
 
 BASH_PROFILE_PATH=~/.bash_profile
-echo $BASH_PROFILE_PATH
-echo "" >> $BASH_PROFILE_PATH
-echo "" >> $BASH_PROFILE_PATH
-echo "# IPython Notebook Spark integration, added by aws.sh" >> $BASH_PROFILE_PATH
+#echo $BASH_PROFILE_PATH
+#echo "" >> $BASH_PROFILE_PATH
+#echo "" >> $BASH_PROFILE_PATH
+#echo "# IPython Notebook Spark integration, added by aws.sh" >> $BASH_PROFILE_PATH
 # Run $ brew info apache-spark to determine the Spark install location
-echo "export SPARK_HOME='/usr/local/Cellar/apache-spark/1.4.1'" >> $BASH_PROFILE_PATH
-echo "# Appending pyspark-shell is needed for Spark 1.4+" >> $BASH_PROFILE_PATH
-echo "export PYSPARK_SUBMIT_ARGS='--master local[2] pyspark-shell'" >> $BASH_PROFILE_PATH
-echo "" >> $BASH_PROFILE_PATH
-source $BASH_PROFILE_PATH
+#echo "export SPARK_HOME='/usr/local/Cellar/apache-spark/1.4.1'" >> $BASH_PROFILE_PATH
+#echo "# Appending pyspark-shell is needed for Spark 1.4+" >> $BASH_PROFILE_PATH
+#echo "export PYSPARK_SUBMIT_ARGS='--master local[2] pyspark-shell'" >> $BASH_PROFILE_PATH
+#echo "" >> $BASH_PROFILE_PATH
+#source $BASH_PROFILE_PATH
 
 echo "------------------------------"
 echo "TODO: Update .aws/ with your AWS credentials and region, or run aws --configure."
