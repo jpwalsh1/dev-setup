@@ -147,33 +147,46 @@ brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
-brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" atom
-brew cask install --appdir="/Applications" virtualbox
-# brew cask install --appdir="/Applications" vagrant
+brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" macdown
+# brew cask install --appdir="/Applications" vagrant
+brew cask install --appdir="/Applications" virtualbox
 
 # Misc casks
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" google-chrome-canary
+
+# Browsers
 brew cask install --appdir="/Applications" chromium
 brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" google-chrome
+brew cask install --appdir="/Applications" google-chrome-canary
 brew cask install --appdir="/Applications" opera
+
+# Messaging
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
+
+# Nice to have apps
 brew cask install --appdir="/Applications" dropbox
-#brew cask install --appdir="/Applications" evernote
 brew cask install --appdir="/Applications" 1password
+#brew cask install --appdir="/Applications" evernote
+# Photoshop Replacement
 brew cask install --appdir="/Applications" gimp
+# Illustrator Replacement
 #brew cask install --appdir="/Applications" inkscape
-brew cask install --appdir="/Applications" disk-inventory-x
-brew cask install --appdir="/Applications" vlc
-brew cask install --appdir="/Applications" day-o
+
+# Jim's Required Software
 brew cask install --appdir="/Applications" appcleaner
 brew cask install --appdir="/Applications" caffeine
+brew cask install --appdir="/Applications" day-o
+brew cask install --appdir="/Applications" disk-inventory-x
 brew cask install --appdir="/Applications" jetbrains-toolbox
-brew cask install --appdir="/Applications" wireshark
 brew cask install --appdir="/Applications" microsoft-remote-desktop-beta
+brew cask install --appdir="/Applications" wireshark
+brew cask install --appdir="/Applications" vlc
+
+# Visual Studio Code
+# brew cask install --appdir="/Applications" visual-studio-code
 
 #Remove comment to install LaTeX distribution MacTeX
 #brew cask install --appdir="/Applications" mactex
