@@ -150,13 +150,21 @@ brew tap caskroom/versions
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
-brew cask install --appdir="~/Applications" xquartz
+# brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" macdown
 brew cask install --appdir="/Applications" virtualbox
+
+# Spring
+#brew tap pivital/tap
+#brew install springboot
+
+# Groovy/Gradle
+# brew install groovy
+# brew install gradle
 
 # Hashicorp Installs
 # brew install packer
