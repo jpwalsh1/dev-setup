@@ -186,6 +186,8 @@ brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" inkscape
 
 # Jim's Required Software
+brew install asciinema
+brew install asciinema2gif
 brew cask install --appdir="/Applications" appcleaner
 brew cask install --appdir="/Applications" caffeine
 brew cask install --appdir="/Applications" day-o
@@ -194,6 +196,7 @@ brew cask install --appdir="/Applications" jetbrains-toolbox
 brew cask install --appdir="/Applications" microsoft-remote-desktop-beta
 brew cask install --appdir="/Applications" wireshark
 brew cask install --appdir="/Applications" vlc
+
 
 # Visual Studio Code
 # brew cask install --appdir="/Applications" visual-studio-code
