@@ -156,8 +156,12 @@ brew cask install --appdir="~/Applications" xquartz
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" macdown
-# brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" virtualbox
+
+# Hashicorp Installs
+# brew install packer
+# brew install terraform
+# brew cask install --appdir="/Applications" vagrant
 
 # Misc casks
 
