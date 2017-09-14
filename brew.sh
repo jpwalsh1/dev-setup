@@ -159,8 +159,8 @@ brew cask install --appdir="/Applications" macdown
 brew cask install --appdir="/Applications" virtualbox
 
 # Spring
-#brew tap pivital/tap
-#brew install springboot
+# brew tap pivotal/tap
+# brew install springboot
 
 # Groovy/Gradle
 # brew install groovy
@@ -181,7 +181,8 @@ brew cask install --appdir="/Applications" google-chrome-canary
 brew cask install --appdir="/Applications" opera
 
 # Messaging
-brew cask install --appdir="/Applications" skype
+# brew cask install --appdir="/Applications" skype
+brew cask install --appdir="/Applications" skype-for-business
 brew cask install --appdir="/Applications" slack
 
 # Nice to have apps
