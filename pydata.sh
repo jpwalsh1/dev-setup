@@ -39,7 +39,7 @@ echo "" >> $BASH_PROFILE_PATH
 source $EXTRA_PATH
 
 ###############################################################################
-# Python 2 Virtual Enviroment                                                 #
+# Python 2 Virtual Environment                                                 #
 ###############################################################################
 
 echo "------------------------------"
@@ -59,6 +59,7 @@ pip install nose
 pip install unittest2
 pip install seaborn
 pip install scikit-learn
+pip install tensorflow
 pip install "ipython[all]"
 pip install bokeh
 pip install Flask
@@ -67,7 +68,7 @@ pip install mysql-python
 pip install psycopg2
 
 ###############################################################################
-# Python 3 Virtual Enviroment                                                 #
+# Python 3 Virtual Environment                                                 #
 ###############################################################################
 
 echo "------------------------------"
@@ -83,10 +84,12 @@ pip install scipy
 pip install matplotlib
 pip install pandas
 pip install sympy
+pip install seaborn
 pip install nose
 pip install unittest2
 pip install seaborn
 pip install scikit-learn
+pip install tensorflow
 pip install "ipython[all]"
 pip install bokeh
 pip install Flask
