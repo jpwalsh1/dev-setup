@@ -21,7 +21,7 @@ Thumbs.db
 .boto
 .mrjob.conf
 .s3cfg
-
+.aws/
 
 # Repo scratch directory
 scratch/
