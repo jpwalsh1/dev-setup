@@ -213,9 +213,9 @@ brew cask install --appdir="/Applications" vlc
 #Remove comment to install LaTeX distribution MacTeX
 #brew cask install --appdir="/Applications" mactex
 
-# Install Docker, which requires virtualbox
-brew install docker
-brew install boot2docker
+# Install Docker
+brew cask install --appdir="/Applications" docker
+
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
