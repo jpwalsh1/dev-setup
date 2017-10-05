@@ -64,7 +64,9 @@ grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install Go
 brew install golang
-GOPATH='export PATH="/usr/local/opt/go/libexec/bin:$PATH"'
+PATH='export PATH="/usr/local/opt/go/libexec/bin:$PATH"'
+GOPATH='export GOPATH="~/Documents/projects/go"'
+grep -q "$PATH" ~/.path || echo "$PATH" >> ~/.path
 grep -q "$GOPATH" ~/.path || echo "$GOPATH" >> ~/.path
 
 
@@ -176,6 +178,7 @@ brew cask install --appdir="/Applications" virtualbox
 # Browsers
 brew cask install --appdir="/Applications" chromium
 brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" firefoxnightly
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" google-chrome-canary
 brew cask install --appdir="/Applications" opera
@@ -203,6 +206,7 @@ brew cask install --appdir="/Applications" day-o
 brew cask install --appdir="/Applications" disk-inventory-x
 brew cask install --appdir="/Applications" jetbrains-toolbox
 brew cask install --appdir="/Applications" microsoft-remote-desktop-beta
+brew cask install --appdir='/Applications' smcfancontrol
 brew cask install --appdir="/Applications" wireshark
 brew cask install --appdir="/Applications" vlc
 
