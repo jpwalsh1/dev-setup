@@ -128,6 +128,7 @@ brew install rename
 brew install rhino
 brew install speedtest_cli
 brew install ssh-copy-id
+brew install streamlink
 brew install tree
 brew install webkit2png
 brew install zopfli
@@ -210,6 +211,12 @@ brew cask install --appdir='/Applications' smcfancontrol
 brew cask install --appdir="/Applications" wireshark
 brew cask install --appdir="/Applications" vlc
 
+# Google Cloud SDK
+brew cask install google-cloud-sdk
+
+# Google Cloud FUSE
+brew cask install osxfuse
+brew install gcsfuse
 
 # Visual Studio Code
 # brew cask install --appdir="/Applications" visual-studio-code

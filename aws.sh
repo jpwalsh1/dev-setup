@@ -15,6 +15,11 @@ echo "------------------------------"
 echo "Source virtualenvwrapper from ~/.extra"
 source ~/.extra
 
+echo "------------------------------"
+echo "Installing S3fs for mounting S3 buckets."
+brew install s3fs
+
+
 ###############################################################################
 # Python 2 Virtual Enviroment                                                 #
 ###############################################################################
