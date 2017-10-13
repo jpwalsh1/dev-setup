@@ -64,10 +64,10 @@ grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install Go
 brew install golang
-PATH='export PATH="/usr/local/opt/go/libexec/bin:$PATH"'
-GOPATH='export GOPATH="~/Documents/projects/go"'
-grep -q "$PATH" ~/.path || echo "$PATH" >> ~/.path
-grep -q "$GOPATH" ~/.path || echo "$GOPATH" >> ~/.path
+#PATH='export PATH="/usr/local/opt/go/libexec/bin:$PATH"'
+#GOPATH='export GOPATH="~/Documents/projects/go"'
+#grep -q "$PATH" ~/.path || echo "$PATH" >> ~/.path
+#grep -q "$GOPATH" ~/.path || echo "$GOPATH" >> ~/.path
 
 
 # Install more recent versions of some OS X tools.
