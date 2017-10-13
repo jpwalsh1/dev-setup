@@ -186,7 +186,7 @@ brew cask install --appdir="/Applications" opera
 
 # Messaging
 # brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" skype-for-business
+#brew cask install --appdir="/Applications" skype-for-business
 brew cask install --appdir="/Applications" slack
 
 # Nice to have apps
