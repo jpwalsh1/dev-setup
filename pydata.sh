@@ -22,8 +22,10 @@ echo "Setting up virtual environments."
 # Install virtual environments globally
 # It fails to install virtualenv if PIP_REQUIRE_VIRTUALENV was true
 export PIP_REQUIRE_VIRTUALENV=false
+pip install pbr
 pip install virtualenv
-pip install virtualenvwrapper
+pip install --no-deps stevedore
+pip install --no-deps virtualenvwrapper
 
 echo "------------------------------"
 echo "Source virtualenvwrapper from ~/.extra"
@@ -46,7 +48,7 @@ echo "------------------------------"
 echo "Setting up py2-data virtual environment."
 
 # Create a Python2 data environment
-mkvirtualenv py2-data
+mkvirtualenv --python=/user/local/bin/python2 py2-data
 workon py2-data
 
 # Install Python data modules
@@ -75,7 +77,7 @@ echo "------------------------------"
 echo "Setting up py3-data virtual environment."
 
 # Create a Python3 data environment
-py3-data
+mkvirtualenv --python=/usr/local/bin/python3 py3-data
 workon py3-data
 
 # Install Python data modules
