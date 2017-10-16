@@ -233,6 +233,12 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 # Enable HiDPI display modes (requires restart)
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
+# Disable local admin account from login screen
+sudo dscl . create /Users/njmacadmin IsHidden 1
+
+# Disabled Other Users on login screen
+sudo defaults write /Library/Preferences/com.apple.loginwindow SHOWOTHERUSERS_MANAGED -bool FALSE
+
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
