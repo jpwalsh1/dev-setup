@@ -233,3 +233,7 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Allow all admins on computer to manage Brew packages
+#chgrp -R admin /usr/local
+#chmod -R g+w /usr/local
