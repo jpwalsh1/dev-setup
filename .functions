@@ -242,5 +242,29 @@ function o() {
 # `less` with options to preserve color and line numbers, unless the output is
 # small enough for one screen.
 function tre() {
-    tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
+    tree -aC -I '.git|node_modules|bower_components|.idea' --dirsfirst "$@" | less -FRNX;
+}
+
+function ajwc(){
+  aws $@ --profile jwc
+}
+
+function awsgg(){
+  aws $@ --profile gg
+}
+
+function njdev(){
+  aws $@ --profile njdev
+}
+
+function njtest(){
+  aws $@ --profile njtest
+}
+
+function njprod(){
+  aws $@ --profile njprod
+}
+
+function njss(){
+  aws $@ --profile njshared
 }

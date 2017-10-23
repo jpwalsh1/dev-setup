@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Do our work in the temporary directory that gets cleaned on boot
+# Place to leave built program
 cd ~/scripts/
 
 # Create the source file
