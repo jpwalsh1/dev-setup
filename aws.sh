@@ -63,6 +63,8 @@ pip install boto
 pip install awscli
 #pip install mrjob  # Python 2 only
 #pip install s3cmd  # Python 2 only
+pip install awslogs
+pip installs saws
 
 # Uncomment if you want to hook up the aws cli autocomplete for Python 3
 EXTRA_PATH=~/.extra
