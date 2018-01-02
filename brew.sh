@@ -207,6 +207,7 @@ brew cask install --appdir="/Applications" day-o
 brew cask install --appdir="/Applications" disk-inventory-x
 brew cask install --appdir="/Applications" jetbrains-toolbox
 brew cask install --appdir="/Applications" microsoft-remote-desktop-beta
+brew cask install --appdir="/Applications" postman
 brew cask install --appdir='/Applications' smcfancontrol
 brew cask install --appdir="/Applications" wireshark
 brew cask install --appdir="/Applications" vlc
