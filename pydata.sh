@@ -48,7 +48,7 @@ echo "------------------------------"
 echo "Setting up py2-data virtual environment."
 
 # Create a Python2 data environment
-mkvirtualenv --python=/user/local/bin/python2 py2-data
+mkvirtualenv --python=/usr/local/bin/python2 py2-data
 workon py2-data
 
 # Install Python data modules

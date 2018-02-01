@@ -268,3 +268,9 @@ function njprod(){
 function njss(){
   aws $@ --profile njshared
 }
+
+# Function to deploy updated parameters to ParamStore
+# Usage: parms params.json rsp.out njdev
+function parms(){
+  aws lambda invoke --function-name manage-pstore-import-params --payload file://$1 $2 --profile $3
+}

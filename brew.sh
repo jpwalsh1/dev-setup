@@ -179,14 +179,14 @@ brew cask install --appdir="/Applications" virtualbox
 # Browsers
 brew cask install --appdir="/Applications" chromium
 brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" firefoxnightly
+brew cask install --appdir="/Applications" firefox-nightly
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" google-chrome-canary
 brew cask install --appdir="/Applications" opera
 
 # Messaging
 # brew cask install --appdir="/Applications" skype
-# brew cask install --appdir="/Applications" skype-for-business
+brew cask install --appdir="/Applications" skype-for-business
 brew cask install --appdir="/Applications" slack
 
 # Nice to have apps

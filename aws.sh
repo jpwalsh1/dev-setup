@@ -64,7 +64,8 @@ pip install awscli
 #pip install mrjob  # Python 2 only
 #pip install s3cmd  # Python 2 only
 pip install awslogs
-pip installs saws
+pip install saws
+pip install sagemaker
 
 # Uncomment if you want to hook up the aws cli autocomplete for Python 3
 EXTRA_PATH=~/.extra
