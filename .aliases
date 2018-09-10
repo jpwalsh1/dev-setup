@@ -21,14 +21,6 @@ alias chmox="chmod +x"
 alias odr="cd ~/Documents/OneDrive\ -\ NetJets"
 alias gpf="find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;"
 
-# Drive Mapping Alises
-alias sdrive="cd ~/njdrive/s"
-alias tdrive="cd ~/njdrive/t"
-alias udrive="cd ~/njdrive/u"
-alias vdrive="cd ~/njdrive/v"
-alias wdrive="cd ~/njdrive/w"
-alias xdrive="cd ~/njdrive/x"
-alias zdrive="cd ~/njdrive/z"
 
 # Detect which `ls` flavor is in use
 #if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -184,10 +176,8 @@ alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
 
 # Amazon account numbers
-alias devno="echo [insert number]"
-alias tstno="echo [insert number]"
-alias prdno="echo [insert number]"
-alias ssno="echo [insert number]"
+alias amno="echo 671332272189 | pbcopy"
+
 
 # Amazon Start Dev Instance in the morning
 alias devstart="njdev ec2 start-instances --instance-id [insert instance id]"

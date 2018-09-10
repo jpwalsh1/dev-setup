@@ -45,11 +45,11 @@ source $EXTRA_PATH
 ###############################################################################
 
 echo "------------------------------"
-echo "Setting up py2-data virtual environment."
+echo "Setting up py2 virtual environment."
 
 # Create a Python2 data environment
-mkvirtualenv --python=/usr/local/bin/python2 py2-data
-workon py2-data
+mkvirtualenv --python=/usr/local/bin/python2 py2
+workon py2
 
 # Install Python data modules
 pip install numpy
@@ -74,11 +74,11 @@ pip install psycopg2
 ###############################################################################
 
 echo "------------------------------"
-echo "Setting up py3-data virtual environment."
+echo "Setting up py3 virtual environment."
 
 # Create a Python3 data environment
-mkvirtualenv --python=/usr/local/bin/python3 py3-data
-workon py3-data
+mkvirtualenv --python=/usr/local/bin/python3 py3
+workon py3
 
 # Install Python data modules
 pip install numpy
@@ -104,14 +104,14 @@ pip install psycopg2
 # Install IPython Profile
 ###############################################################################
 
-echo "------------------------------"
-echo "Installing IPython Notebook Default Profile"
+# echo "------------------------------"
+# echo "Installing IPython Notebook Default Profile"
 
 # Add the IPython profile
-mkdir -p ~/.ipython
-cp -r init/profile_default/ ~/.ipython/profile_default
+# mkdir -p ~/.ipython
+# cp -r init/profile_default/ ~/.ipython/profile_default
 
 echo "------------------------------"
 echo "Script completed."
-echo "Usage: workon py2-data for Python2"
-echo "Usage: workon py3-data for Python3"
+echo "Usage: workon py2 for Python2"
+echo "Usage: workon py3 for Python3"

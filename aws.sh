@@ -15,9 +15,9 @@ echo "------------------------------"
 echo "Source virtualenvwrapper from ~/.extra"
 source ~/.extra
 
-echo "------------------------------"
-echo "Installing S3fs for mounting S3 buckets."
-brew install s3fs
+#echo "------------------------------"
+#echo "Installing S3fs for mounting S3 buckets."
+#brew install s3fs
 
 
 ###############################################################################
@@ -25,13 +25,13 @@ brew install s3fs
 ###############################################################################
 
 echo "------------------------------"
-echo "Updating py2-data virtual environment with AWS modules."
+echo "Updating py2 virtual environment with AWS modules."
 
 # Create a Python2 data environment
 # If this environment already exists from running pydata.sh,
 # it will not be overwritten
-mkvirtualenv py2-data
-workon py2-data
+mkvirtualenv py2
+workon py2
 
 pip install boto
 pip install awscli
@@ -51,13 +51,13 @@ source $EXTRA_PATH
 ###############################################################################
 
 echo "------------------------------"
-echo "Updating py3-data virtual environment with AWS modules."
+echo "Updating py3 virtual environment with AWS modules."
 
 # Create a Python3 data environment
 # If this environment already exists from running pydata.sh,
 # it will not be overwritten
 mkvirtualenv --python=/usr/local/bin/python3 py3-data
-workon py3-data
+workon py3
 
 pip install boto
 pip install awscli
@@ -106,8 +106,8 @@ npm install -g serverless
 # Install IPython Notebook Spark Integration
 ###############################################################################
 
-echo "------------------------------"
-echo "Installing IPython Notebook Spark integration"
+#echo "------------------------------"
+#echo "Installing IPython Notebook Spark integration"
 
 # Add the pyspark IPython profile
 #cp -r init/profile_pyspark/ ~/.ipython/profile_pyspark

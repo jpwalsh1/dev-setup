@@ -34,7 +34,7 @@ brew install findutils
 brew install gnu-sed --with-default-names
 # Install Bash 4.
 brew install bash
-brew tap homebrew/versions
+# brew tap homebrew/versions
 brew install bash-completion2
 # We installed the new shell, now we have to activate it
 echo "Adding the newly installed shell to the list of allowed shells"
@@ -57,13 +57,13 @@ brew install python
 brew install python3
 
 # Install ruby-build and rbenv
-brew install ruby-build
-brew install rbenv
-LINE='eval "$(rbenv init -)"'
-grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
+# brew install ruby-build
+# brew install rbenv
+# LINE='eval "$(rbenv init -)"'
+# grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install Go
-brew install golang
+# brew install golang
 #PATH='export PATH="/usr/local/opt/go/libexec/bin:$PATH"'
 #GOPATH='export GOPATH="~/Documents/projects/go"'
 #grep -q "$PATH" ~/.path || echo "$PATH" >> ~/.path
@@ -72,9 +72,9 @@ brew install golang
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
+brew install grep
+brew install openssh
+brew install screen
 # brew install homebrew/php/php55 --with-gmp
 
 # Install font tools.
@@ -152,14 +152,14 @@ brew tap caskroom/versions
 # Core casks
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
-brew cask install --appdir="~/Applications" java
+# brew cask install --appdir="~/Applications" java
 # brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
 brew cask install --appdir="/Applications" atom
-brew cask install --appdir="/Applications" sublime-text
+# brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" macdown
-brew cask install --appdir="/Applications" virtualbox
+# brew cask install --appdir="/Applications" virtualbox
 
 # Spring
 # brew tap pivotal/tap
@@ -177,24 +177,24 @@ brew cask install --appdir="/Applications" virtualbox
 # Misc casks
 
 # Browsers
-brew cask install --appdir="/Applications" chromium
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" firefox-nightly
-brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" google-chrome-canary
-brew cask install --appdir="/Applications" opera
+# brew cask install --appdir="/Applications" chromium
+# brew cask install --appdir="/Applications" firefox
+# brew cask install --appdir="/Applications" firefox-nightly
+# brew cask install --appdir="/Applications" google-chrome
+# brew cask install --appdir="/Applications" google-chrome-canary
+# brew cask install --appdir="/Applications" opera
 
 # Messaging
 # brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" skype-for-business
+# brew cask install --appdir="/Applications" skype-for-business
 brew cask install --appdir="/Applications" slack
 
 # Nice to have apps
-brew cask install --appdir="/Applications" dropbox
+# brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" 1password
 #brew cask install --appdir="/Applications" evernote
 # Photoshop Replacement
-brew cask install --appdir="/Applications" gimp
+# brew cask install --appdir="/Applications" gimp
 # Illustrator Replacement
 #brew cask install --appdir="/Applications" inkscape
 
@@ -209,15 +209,15 @@ brew cask install --appdir="/Applications" jetbrains-toolbox
 brew cask install --appdir="/Applications" microsoft-remote-desktop-beta
 brew cask install --appdir="/Applications" postman
 brew cask install --appdir='/Applications' smcfancontrol
-brew cask install --appdir="/Applications" wireshark
+# brew cask install --appdir="/Applications" wireshark
 brew cask install --appdir="/Applications" vlc
 
 # Google Cloud SDK
-brew cask install google-cloud-sdk
+# brew cask install google-cloud-sdk
 
 # Google Cloud FUSE
-brew cask install osxfuse
-brew install gcsfuse
+# brew cask install osxfuse
+# brew install gcsfuse
 
 # Visual Studio Code
 # brew cask install --appdir="/Applications" visual-studio-code
